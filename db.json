@@ -1,19 +1,14 @@
 {
-  "posts": [
+  "books": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "The Design of Everyday Things",
+      "subject": "Design"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "The Most Human Human",
+      "subject": "Computer Science"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
