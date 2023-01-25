@@ -6,7 +6,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
-import { Book } from "./App";
+import { Book } from "./Books";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 
@@ -21,12 +21,12 @@ export default function BookTable({ books, setBooks }: BookTableProps) {
       <TableRow key={book.id}>
         <TableCell>
           <IconButton
+            aria-label={"Delete " + book.title}
             onClick={() => {
               setBooks(books.filter((b) => b.id !== book.id));
             }}
           >
             <DeleteIcon />
-            Delete
           </IconButton>
         </TableCell>
         <TableCell>{book.title}</TableCell>
